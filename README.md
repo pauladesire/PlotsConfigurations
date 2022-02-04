@@ -1,4 +1,4 @@
-# WW/Full2016_v7
+# WW-Full2016_v7
 
 ### Analysis Steps: 
 <p> mkShapesMulti.py --pycfg=configuration.py --doBatch=1 --batchSplit=Samples,Files --batchQueue=longlunch </p>
