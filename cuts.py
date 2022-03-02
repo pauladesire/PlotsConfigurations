@@ -14,5 +14,5 @@ cuts['ww_em'] = 'mll > 20 \
                  && Alt$(CleanJet_pt[1], 0) > 30. \
                  && Alt$(CleanJet_pt[2], 0) < 30. \
                  && bVeto \
-                 && mth > 50. \
+                 && dphijj < (4.0*3.141592653589/5.0) \
 '

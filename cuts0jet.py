@@ -4,7 +4,7 @@
 
 supercut = 'Lepton_pdgId[0]*Lepton_pdgId[1] == -11*13 \
             && Lepton_pt[0] > 25. \
-            && Lepton_pt[1] > 20. \
+            && Lepton_pt[1] > 25. \
             && (nLepton >= 2 && Alt$(Lepton_pt[2],0) < 10.) \
 '
 

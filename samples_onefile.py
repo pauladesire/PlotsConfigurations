@@ -83,8 +83,12 @@ mcCommonWeight = 'XSWeight*SFweight*PromptGenLepMatch2l*METFilter_MC'
 
 samples['WW'] = {
     'name': nanoGetSampleFiles(mcDirectory, 'WWTo2L2Nu'),
-    'weight': mcCommonWeight + '*nllW*ewknloW', # temporary - nllW module not run on PS and UE variation samples
+    'weight': '1',
     'FilesPerJob': 1
 }
-
+samples['ggWW'] = {
+    'name': nanoGetSampleFiles(mcDirectory, 'GluGluWWTo2L2Nu_MCFM'),
+    'weight': '1',
+    'FilesPerJob': 4
+}
 
