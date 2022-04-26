@@ -6,7 +6,18 @@
 #                    
 structure['DY']  = {  
                   'isSignal' : 0,
-                  'isData'   : 0 
+                  'isData'   : 0,
+              }
+
+structure['Dyemb']  = {
+                  'isSignal' : 0,
+                  'isData'   : 0
+              }
+
+structure['Dyveto']  = {
+                  'isSignal' : 0,
+                  'isData'   : 0,
+                  'removeFromCuts' : [ k for k in cuts ],
               }
 
 
@@ -19,6 +30,7 @@ structure['Fake']  = {
                   'isSignal' : 0,
                   'isData'   : 0 
               }
+
 
 structure['ttbar'] = {   
                   'isSignal' : 0,
@@ -42,8 +54,13 @@ structure['WW']  = {
                   'isData'   : 0    
                   }
 
-structure['ggWW']  = {
+structure['WWewk']  = {
                   'isSignal' : 0,
+                  'isData'   : 0
+                  }
+
+structure['ggWW']  = {
+                  'isSignal' : 1,
                   'isData'   : 0    
                   }
 
@@ -65,6 +82,16 @@ structure['Vg']  = {
 structure['VgS'] = { 
                   'isSignal' : 0,
                   'isData'   : 0 
+                  }
+
+structure['VgS_L'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0
+                  }
+
+structure['VgS_H'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0
                   }
 
 structure['Zg']  = { 
@@ -101,37 +128,26 @@ structure['ggH'] = {
 
 structure['ggH_hww'] = {
                   'isSignal' : 0,
-                  'isData'   : 0    
-                  }
-
-structure['qqH_hww'] = {
-                  'isSignal' : 0,
-                  'isData'   : 0    
-                  }
-
-structure['qqH_hww'] = {
-                  'isSignal' : 0,
-                  'isData'   : 0    
+                  'isData'   : 0,
+                  'scaleSampleForDatacard' : {cut : 1.03364 for cut in cuts.keys()}, # XSECxBR correction for mH = 125.38
                   }
 
 structure['WH_hww'] = {
                   'isSignal' : 0,
-                  'isData'   : 0    
+                  'isData'   : 0,
+                  'scaleSampleForDatacard' : {cut : 1.01724 for cut in cuts.keys()}, # XSECxBR correction for mH = 125.38 
                   }
 
 structure['ZH_hww'] = {
                   'isSignal' : 0,
-                  'isData'   : 0    
+                  'isData'   : 0,
+                  'scaleSampleForDatacard' : {cut : 1.01994 for cut in cuts.keys()}, # XSECxBR correction for mH = 125.38
                   }
 
 structure['ggZH_hww'] = {
                   'isSignal' : 0,
-                  'isData'   : 0    
-                  }
-
-structure['H_htt'] = {
-                  'isSignal' : 0,
-                  'isData'   : 0    
+                  'isData'   : 0,
+                  'scaleSampleForDatacard' : {cut : 1.02494 for cut in cuts.keys()}, # XSECxBR correction for mH = 125.38
                   }
 
 structure['H_hww'] = {
@@ -139,15 +155,57 @@ structure['H_hww'] = {
                   'isData'   : 0    
                   }
 
+structure['bbH_hww'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0
+                  }
 
+structure['ttH_hww'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0
+                  }
+
+structure['ggH_htt'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0,
+                  }
+
+structure['qqH_htt'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0,
+                  }
+
+structure['WH_htt'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0,
+                  }
+
+structure['ZH_htt'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0,
+                  }
+
+structure['H_htt'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0    
+                  }
+
+
+structure['qqH_hww'] = {
+                  'isSignal' : 0,
+                  'isData'   : 0
+                  }
 
 # data
+
 
 structure['DATA']  = { 
                   'isSignal' : 0,
                   'isData'   : 1 
               }
 
+for nuis in nuisances.itervalues():
+  if 'cutspost' in nuis:
+    nuis['cuts'] = nuis['cutspost'](nuis, cuts)
 
-
-
+    print nuis

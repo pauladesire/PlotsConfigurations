@@ -1,0 +1,159 @@
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+>>> method used is FitDiagnostics
+Channel ch1 will use autoMCStats with settings: event-threshold=10, include-signal=0, hist-mode=1
+============================================================
+Analysing bin errors for: prop_binch1
+Poisson cut-off: 10
+Processes excluded for sums: WW ggWW
+============================================================
+Bin        Contents        Error           Notes                         
+0          3568.374170     20.360965       total sum                     
+0          3344.222185     19.293557       excluding marked processes    
+0          30045.000000    173.334936      Unweighted events, alpha=0.118768
+  => Total parameter prop_binch1_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+1          0.000000        0.000000        total sum                     
+1          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+2          0.000000        0.000000        total sum                     
+2          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+3          0.000000        0.000000        total sum                     
+3          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+4          0.000000        0.000000        total sum                     
+4          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+5          0.000000        0.000000        total sum                     
+5          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+6          0.000000        0.000000        total sum                     
+6          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+7          0.000000        0.000000        total sum                     
+7          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+8          0.000000        0.000000        total sum                     
+8          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+9          0.000000        0.000000        total sum                     
+9          0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+10         0.000000        0.000000        total sum                     
+10         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+11         0.000000        0.000000        total sum                     
+11         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+12         0.000000        0.000000        total sum                     
+12         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+13         0.000000        0.000000        total sum                     
+13         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+14         0.000000        0.000000        total sum                     
+14         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+15         0.000000        0.000000        total sum                     
+15         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+16         0.000000        0.000000        total sum                     
+16         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+17         0.000000        0.000000        total sum                     
+17         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+18         0.000000        0.000000        total sum                     
+18         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+19         0.000000        0.000000        total sum                     
+19         0.000000        0.000000        excluding marked processes    
+  => Error is zero, ignore      
+------------------------------------------------------------
+20         9607.892186     34.970416       total sum                     
+20         8636.232892     32.050266       excluding marked processes    
+20         72608.000000    269.458717      Unweighted events, alpha=0.132326
+  => Total parameter prop_binch1_bin20[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+21         4159.630732     21.401876       total sum                     
+21         3905.062089     20.082129       excluding marked processes    
+21         37813.000000    194.455650      Unweighted events, alpha=0.110005
+  => Total parameter prop_binch1_bin21[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+22         2411.065086     14.582039       total sum                     
+22         2322.248688     13.966949       excluding marked processes    
+22         27645.000000    166.267856      Unweighted events, alpha=0.087215
+  => Total parameter prop_binch1_bin22[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+23         1834.291154     12.121536       total sum                     
+23         1793.646529     11.786374       excluding marked processes    
+23         23159.000000    152.180814      Unweighted events, alpha=0.079204
+  => Total parameter prop_binch1_bin23[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+24         1718.852415     11.349251       total sum                     
+24         1695.661626     11.150918       excluding marked processes    
+24         23124.000000    152.065775      Unweighted events, alpha=0.074332
+  => Total parameter prop_binch1_bin24[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+25         1761.048004     11.315242       total sum                     
+25         1743.738167     11.156185       excluding marked processes    
+25         24430.000000    156.300992      Unweighted events, alpha=0.072085
+  => Total parameter prop_binch1_bin25[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+26         2032.970466     12.169042       total sum                     
+26         2019.477629     12.046177       excluding marked processes    
+26         28105.000000    167.645459      Unweighted events, alpha=0.072335
+  => Total parameter prop_binch1_bin26[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+27         2436.260327     12.966070       total sum                     
+27         2424.684670     12.875061       excluding marked processes    
+27         35466.000000    188.324189      Unweighted events, alpha=0.068693
+  => Total parameter prop_binch1_bin27[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+28         3631.517166     15.707293       total sum                     
+28         3626.531650     15.673072       excluding marked processes    
+28         53540.000000    231.387122      Unweighted events, alpha=0.067828
+  => Total parameter prop_binch1_bin28[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+29         21767.133556    38.087137       total sum                     
+29         21756.500356    38.062620       excluding marked processes    
+29         326724.000000   571.597761      Unweighted events, alpha=0.066622
+  => Total parameter prop_binch1_bin29[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+Channel ch2 will use autoMCStats with settings: event-threshold=10, include-signal=0, hist-mode=1
+============================================================
+Analysing bin errors for: prop_binch2
+Poisson cut-off: 10
+Processes excluded for sums: WW ggWW
+============================================================
+Bin        Contents        Error           Notes                         
+0          60269.476362    63.656791       total sum                     
+0          59888.434774    63.054298       excluding marked processes    
+0          902104.000000   949.791556      Unweighted events, alpha=0.066810
+  => Total parameter prop_binch2_bin0[0.00,-7.00,7.00] to be gaussian constrained
+------------------------------------------------------------
+SimNLL created with 0 channels, 0 generic constraints, 105 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+SimNLL created with 2 channels, 0 generic constraints, 105 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+
+ --- FitDiagnostics ---
+Best fit r: -0.674693  -0.808495/+0.770782  (68% CL)
+Done in 0.04 min (cpu), 0.05 min (real)

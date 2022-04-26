@@ -3,8 +3,8 @@ import copy
 import inspect
 
 configurations = os.path.realpath(inspect.getfile(inspect.currentframe())) # this file
-configurations = os.path.dirname(configurations) # ggH2016
-configurations = os.path.dirname(configurations) # Differential
+configurations = os.path.dirname(configurations) # Full2016_V7
+configurations = os.path.dirname(configurations) # WW
 configurations = os.path.dirname(configurations) # Configurations
 
 #aliases = {}
@@ -17,6 +17,8 @@ mc_emb = [skey for skey in samples if skey not in ('Fake', 'DATA')]
 
 eleWP = 'mva_90p_Iso2016'
 muWP = 'cut_Tight80x_tthmva_80'
+
+
 
 aliases['LepWPCut'] = {
     'expr': 'LepCut2l__ele_'+eleWP+'__mu_'+muWP,
@@ -279,3 +281,7 @@ aliases['lhe_mW2'] = {
     'samples': ['WWewk']
 }
 
+aliases['BDTOutput_2j_Top'] = {                                                                                                            
+    'class': 'ww_top_bdt_2j',                                                                                                               
+    'linesToAdd' : ['.L %s/WW/Full2016_v7/WW_TMVAReader.C+' % configurations],                                                       
+} 
