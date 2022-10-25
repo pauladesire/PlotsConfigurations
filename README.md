@@ -1,4 +1,15 @@
 # Latinos code
+### Initiate virtual machine
+<p> ssh -Y pdesirev@lxplus7.cern.ch </p>
+
+### Submit failed jobs
+<p> condor_submit ggWW.14/mkShapes__WW__ALL__ggWW.14.jds </p>
+<p> for i in */*.jid; do condor_submit ${i/jid/jds}; done </p>
+
+### Enter git
+<p> eval "$(ssh-agent -s)" </p>
+<p> ssh-add ~/.ssh/gitkey </p>
+<p> ssh-add -l </p>
 
 ### Analysis Steps:
 <i> Run the files </i>
@@ -42,3 +53,9 @@
 <p> combine -M MultiDimFit datacard_combined.txt -m 125 --expectSignal=1 -t -1 --algo=grid --points 100 --setParameterRanges r=-7,7 -n "_MyScan" </p>
 <p> wget https://raw.githubusercontent.com/latinos/PlotsConfigurations/master/Configurations/ggH/scripts/drawNLL.C </p>
 <p> root -l higgsCombine_MyScan.MultiDimFit.mH125.root drawNLL.C </p>
+
+## Enter the rootfile
+<p> root -l rootFile/plots_WW.root </p>
+<p> ww_em->cd() </p>
+<p> events->cd() </p>
+<p> histo_WW>GetBinContent(1) </p>
