@@ -1,7 +1,7 @@
 # Latinos code
 
 ### Analysis Steps:
-Run the files
+<i> Run the files </i>
 <p> mkShapesMulti.py --pycfg=configuration.py --doBatch=1 --batchSplit=Samples,Files --batchQueue=workday </p>
 2. Merge the files
 <p> mkShapesMulti.py --pycfg=configuration.py --doHadd=1 --batchSplit=Samples,Files --doNotCleanup --nThreads=10  </p>
