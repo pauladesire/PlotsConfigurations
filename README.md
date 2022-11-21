@@ -11,6 +11,18 @@
 <p> ssh-add ~/.ssh/gitkey </p>
 <p> ssh-add -l </p>
 
+### Madgraph
+<i> Run Madgraph </i>
+<p> python2 ./bin/mg5_amc </p>
+<p> import model ALP </p>
+<p> generate p p > w+ w- </p>
+<p> output XXX </p>
+<p> launch </p>
+<i> Latino Trees compile step </i>
+<p> c++ -o ntupleMaker.exe `root-config --cflags` ntupleMaker.cpp `root-config --libs`</p>
+<i> Latino Trees execute: Produces a root file from events <i>
+<p> ./ntupleMaker.exe ../../madgraph/MG5/MG5_aMC_v2_0_1/ma_0p001_CW_0p25Events/run_01/unweighted_events.lhe   ma0p001_CW_0p25.root </p>
+ 
 ### Analysis Steps:
 <i> Run the files </i>
 <p> mkShapesMulti.py --pycfg=configuration.py --doBatch=1 --batchSplit=Samples,Files --batchQueue=workday </p>
