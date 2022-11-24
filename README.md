@@ -15,7 +15,9 @@
 <i> Run Madgraph </i>
 <p> python2 ./bin/mg5_amc </p>
 <p> import model ALP </p>
-<p> generate p p > w+ w- </p>
+<p> define multiparticle l- = e- mu- ta- </p>
+<p> define multiparticle l+ = e+ mu+ ta+ </p>
+<p> generate p p > w+ w-, w+ > l+ vl, w- > l- vl~ </p>
 <p> output XXX </p>
 <p> launch </p>
 <i> Latino Trees compile step </i>
