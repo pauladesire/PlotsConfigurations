@@ -62,6 +62,10 @@
 <p> combineTool.py -M Impacts -d datacard_combined.root -m 125 -o impacts.json </p>
 <p> plotImpacts.py -i impacts.json -o impacts </p>
 
+### Upper limits (for non SM)
+<p> combine -M AsymptoticLimits datacard.txt </p>
+
+
 ### Likelihood scan
 <i> Obtain the likelihood to the case that has been forced to have r=1 (for example) </i>
 <p> combine -M MultiDimFit datacard_combined.txt -m 125 --expectSignal=1 -t -1 --algo=grid --points 100 --setParameterRanges r=-7,7 -n "_MyScan" </p>
