@@ -64,7 +64,7 @@
 
 ### Upper limits (for non SM)
 <p> combine -M AsymptoticLimits datacard.txt </p>
-
+ <p> If you want to do it blinded, include options --noFitAsimov and --run blind </p>
 
 ### Likelihood scan
 <i> Obtain the likelihood to the case that has been forced to have r=1 (for example) </i>
